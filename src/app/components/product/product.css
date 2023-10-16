@@ -1,0 +1,126 @@
+.product-grid .showcase {
+    border-top: 1px solid var(--cultured);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+}
+
+.product-grid .showcase:hover {
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-grid .showcase-banner {
+    position: relative;
+}
+
+.product-grid .product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-timing);
+}
+
+.product-grid .product-img.default {
+    position: relative;
+    z-index: 1;
+}
+
+.product-grid .product-img.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.product-grid .showcase:hover .product-img.hover {
+    opacity: 1;
+}
+
+.product-grid .showcase:hover .product-img.default {
+    opacity: 0;
+}
+
+.product-grid .showcase-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    padding: 5px;
+    transform: translateX(80px);
+    transition: var(--transition-timing);
+    z-index: 3;
+}
+
+.product-grid .showcase:hover .showcase-actions {
+    transform: translateX(0);
+}
+
+.product-grid .btn-action {
+    background: white;
+    color: var(--sonic-silver);
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid var(--cultured);
+    border-radius: 8px;
+    transition: var(--transition-timing);
+}
+
+.product_btn-icon {
+    margin-bottom: -5px;
+}
+
+.product-grid .btn-action:hover {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.product-grid .showcase-content {
+    padding: 15px 20px 0;
+}
+
+.product-grid .showcase-category {
+    color: var(--primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-grid .showcase-title {
+    color: var(--sonic-silver);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    transition: var(--transition-timing);
+}
+
+.product-grid .showcase-title:hover {
+    color: black;
+}
+
+.product-grid .showcase-rating {
+    display: flex;
+    color: var(--sandy-brown);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.product-grid .price-box {
+    display: flex;
+    gap: 10px;
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.product-grid .price {
+    font-weight: 700;
+}
+
+.product-grid del {
+    color: var(--sonic-silver);
+}

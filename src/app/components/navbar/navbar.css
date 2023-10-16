@@ -1,0 +1,145 @@
+.navbar {
+    display: block;
+}
+
+.navbar-top {
+    padding: 20px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.navbar-container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.navbar_search {
+    position: relative;
+    flex: 2;
+}
+
+.navbar_search .search-field {
+    font-size: 15px;
+    padding: 12px 15px;
+    padding-right: 50px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.search-btn {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    color: var(--onxy);
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: color 0.2s ease;
+}
+
+.search-btn:hover {
+    color: var(--primary);
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    display: block;
+}
+
+.navbar-icons .action-btn {
+    position: relative;
+    font-size: 30px;
+    color: var(--onxy);
+    padding: 5px;
+}
+
+.navbar-icons .count {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background: var(--bittersweet);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 20px;
+}
+
+.desktop-menu-category-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.desktop-menu-category-list .menu-category>.menu-title {
+    position: relative;
+    color: var(--onyx);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 18px 0;
+    transition: color 0.2s ease;
+    display: block;
+}
+
+.desktop-menu-category-list .menu-category>.menu-title:hover {
+    color: var(--primary);
+}
+
+.desktop-menu-category-list .menu-category>.menu-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1%;
+    height: 2.5px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: width 0.4s ease;
+}
+
+.desktop-menu-category-list .menu-category>.menu-title:hover::after {
+    transform: scaleX(1);
+    width: 100%;
+}
+
+@media screen and (max-width: 1536px) {
+    .navbar-container {
+        max-width: 1366px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar-container {
+        max-width: 1024px;
+    }
+}
+
