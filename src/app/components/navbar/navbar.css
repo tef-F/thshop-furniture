@@ -90,6 +90,36 @@
     border-radius: 20px;
 }
 
+.user-list {
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 100%;
+    background-color: hsl(0, 30%, 97%);
+    border-radius: 5px;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    color: var(--onxy);
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+
+.user-item:hover {
+    color: white;
+    background-color: black;
+}
+
+.action-btn:hover .user-list {
+    display: block;
+}
+
 .desktop-menu-category-list {
     position: relative;
     display: flex;

@@ -1,0 +1,90 @@
+.login-container {
+    max-width: 700px;
+    width: 100%;
+    background: #f3f3f3;
+    padding: 25px 30px;
+    border-radius: var(--border-radius-sm);
+}
+
+.login-container .login-title {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+.login-container .login-title::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 30px;
+    background: var(--primary);
+}
+
+.login-container form .login-details {
+    margin: 20px 0 12px 0;
+}
+
+.login-details .input-box {
+    width: 100% ;
+    margin-bottom: 25px;
+}
+
+.login-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.login-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+    transition: all 0.3 ease;
+}
+
+.login-details .input-box input:focus,
+.login-details .input-box input:valid {
+    border-color: var(--primary);
+}
+
+.login-btn {
+    height: 45px;
+}
+
+.login-btn input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius-sm);
+    background: var(--primary);
+    transition: var(--transition-timing);
+}
+
+.login-btn input:hover {
+    background: black;
+    cursor: pointer;
+}
+
+.login-text {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 5px;
+}
+
+.link-register {
+    color: var(--primary);
+}

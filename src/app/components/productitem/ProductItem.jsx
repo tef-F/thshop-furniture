@@ -1,13 +1,10 @@
-import React from 'react'
-import "./product.css"
-import { AiFillStar, AiOutlineEye, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineStar } from 'react-icons/ai'
-import Link from 'next/link'
-import Image from 'next/image'
+import { AiFillStar, AiOutlineEye, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineStar } from "react-icons/ai"
+import "./productitem.css"
+import Link from "next/link"
 
-const Product = () => {
+const ProductItem = () => {
     return (
         <div className="product-grid">
-
             <div className="showcase">
                 <div className="showcase-banner">
                     
@@ -54,4 +51,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default ProductItem
