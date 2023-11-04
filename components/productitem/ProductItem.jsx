@@ -1,4 +1,4 @@
-import { AiFillStar, AiOutlineEye, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineStar } from "react-icons/ai"
+import { AiFillStar, AiOutlineCamera, AiOutlineEye, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineStar } from "react-icons/ai"
 import "./productitem.css"
 import Link from "next/link"
 
@@ -21,6 +21,9 @@ const ProductItem = () => {
                         </button>
                         <button className="btn-action">
                             <AiOutlineShoppingCart className="product_btn-icon"/>
+                        </button>
+                        <button className="btn-action">
+                            <AiOutlineCamera className="product_btn-icon"/>
                         </button>
                     </div>
                 </div>

@@ -103,8 +103,6 @@ a {
 @media screen and (max-width: 1024px) {
     .wrapper {
         max-width: 768px;
-        padding-left: 25px;
-        padding-right: 25px;
     }
 }
 

@@ -26,7 +26,7 @@ const NavBar = () => {
                                 <div className="action-btn">
                                     <FaRegUser className='icon icon-user' />
                                     <div className="user-list">
-                                        <Link href="/" className="user-item">
+                                        <Link href="/admin" className="user-item">
                                             <IoDocumentTextOutline/>
                                             Profile
                                         </Link>
@@ -58,16 +58,16 @@ const NavBar = () => {
                             <Link href="/" className="menu-title">HOME</Link>
                         </li>
                         <li className="menu-category">
-                            <Link href="/" className="menu-title">PRODUCTS</Link>
+                            <Link href="/product" className="menu-title">PRODUCTS</Link>
                         </li>
                         <li className="menu-category">
-                            <Link href="/" className="menu-title">BLOG</Link>
+                            <Link href="/blog" className="menu-title">BLOG</Link>
                         </li>
                         <li className="menu-category">
-                            <Link href="/" className="menu-title">ABOUT</Link>
+                            <Link href="/about" className="menu-title">ABOUT</Link>
                         </li>
                         <li className="menu-category">
-                            <Link href="/" className="menu-title">CONTACT</Link>
+                            <Link href="/contact" className="menu-title">CONTACT</Link>
                         </li>
                     </ul>
                 </nav>

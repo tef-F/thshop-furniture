@@ -1,0 +1,87 @@
+.page-product {
+    display: flex;
+    gap: 50px;
+    margin: 50px 0;
+}
+.close-trigger, 
+.page-product .widget input[type="checkbox"] {
+    display: none;
+}
+
+.filter-sidebar {
+    width: 30%;
+}
+
+.filter-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.page-product .widget {
+    margin: 20px 0;
+}
+
+.page-product label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.page-product label span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.page-product label i {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.page-product .list-block ul {
+    padding-left: 15px;
+}
+
+.page-product .list-block li {
+    font-size: 18px;
+    padding: 10px 5px;
+}
+
+.sidebar-category-item {
+    color: var(--onxy);
+}
+
+.page-product .widget .accord {
+    padding-right: 15px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.page-product .widget input:checked ~ div {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-product .widget input:checked ~ label i {
+    transform: rotate(180deg);
+}
+
+.griddot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+
+
+
