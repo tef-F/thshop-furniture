@@ -1,7 +1,7 @@
 import Link from "next/link"
 import "./pageProduct.css"
 import { IoChevronDownOutline, IoCloseOutline } from "react-icons/io5"
-import ProductItem from "../../../components/productitem/ProductItem"
+import ProductItem from "../../../../components/productitem/ProductItem"
 
 
 const PageProduct = () => {

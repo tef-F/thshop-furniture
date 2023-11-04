@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="about-wrapper">
             <h1>Our Services</h1>
-            <p>lorem ipsum dolor sit amet, consecttetur adipiscing elit. Cum sociis natoque penatibus et justo</p>
+            <p>Lorem ipsum dolor sit amet, consecttetur adipiscing elit. Cum sociis natoque penatibus et justo</p>
 
             <div className="about_content-box">
                 <div className="about-card">

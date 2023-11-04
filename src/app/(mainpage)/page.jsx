@@ -1,8 +1,8 @@
-import BlogItem from "../../components/blogitem/BlogItem";
-import Categories from "../../components/categories/Categories";
-import ProductItem from "../../components/productitem/ProductItem";
-import Slide from "../../components/slide/Banner";
-import Testimonial from "../../components/testimonial/Testimonial";
+import BlogItem from "../../../components/blogitem/BlogItem";
+import Categories from "../../../components/categories/Categories";
+import ProductItem from "../../../components/productitem/ProductItem";
+import Slide from "../../../components/slide/Banner";
+import Testimonial from "../../../components/testimonial/Testimonial";
 
 import styles from "./homepage.module.css";
 
