@@ -4,25 +4,25 @@ import "./blogitem.css"
 
 const BlogItem = () => {
     return (
-        <div className="blog-container">
+        <div className="blogItem-container">
 
-            <div className="blog-card">
+            <div className="blogItem-card">
                 
                 <Link href="/">
-                    <img src="./blogs/blog-1.jpg" alt="blog-1" className="blog-banner"/>
+                    <img src="./blogs/blog-1.jpg" alt="blog-1" className="blogItem-banner"/>
                 </Link>
 
-                <div className="blog-content">
-                    <Link href="/" className="blog-category">Sofa</Link>
+                <div className="blogItem-content">
+                    <Link href="/" className="blogItem-category">Sofa</Link>
 
                     <Link href="/">
-                        <h3 className="blog-title">
+                        <h3 className="blogItem-title">
                             When You Use a Transitional Furniture Style
                         </h3>
                     </Link>
 
-                    <p className="blog-meta">
-                        By <cite>Mr Admin</cite> / <span className="blogg-time">Apr 06, 2022</span>
+                    <p className="blogItem-meta">
+                        By <cite>Mr Admin</cite> / <span className="blogItem-time">Apr 06, 2022</span>
                     </p>
                 </div>
             </div>
