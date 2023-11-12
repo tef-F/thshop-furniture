@@ -8,8 +8,8 @@ const ProductItem = () => {
             <div className="showcase">
                 <div className="showcase-banner">
                     
-                    <img src="/products/product-1.png" alt="chair1" className="product-img default" />
-                    <img src="/products/product-2.png" alt="chair2" className="product-img hover" />
+                    <img src="/products/1.png" alt="chair1" className="product-img default" />
+                    <img src="/products/2.png" alt="chair2" className="product-img hover" />
 
 
                     <div className="showcase-actions">

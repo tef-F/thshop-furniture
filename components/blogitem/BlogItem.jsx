@@ -9,7 +9,7 @@ const BlogItem = () => {
             <div className="blogItem-card">
                 
                 <Link href="/">
-                    <img src="./blogs/blog-1.jpg" alt="blog-1" className="blogItem-banner"/>
+                    <img src="/blogs/blog-1.jpg" alt="blog-1" className="blogItem-banner"/>
                 </Link>
 
                 <div className="blogItem-content">

@@ -2,7 +2,8 @@ import React from 'react'
 import './navbar.css'
 import { CiSearch } from 'react-icons/ci'
 import { AiTwotoneHome } from 'react-icons/ai'
-import { FaCartShopping, FaRegHeart, FaRegUser } from 'react-icons/fa6'
+import { FaRegHeart, FaRegUser } from 'react-icons/fa6'
+import { GrCart } from "react-icons/gr";
 import Link from 'next/link'
 import { IoCreateOutline, IoDocumentTextOutline, IoLogInOutline } from 'react-icons/io5'
 
@@ -45,7 +46,7 @@ const NavBar = () => {
                                     <span className="count">0</span>
                                 </button>
                                 <button className="action-btn">
-                                    <FaCartShopping className='icon'/>
+                                    <GrCart className='icon'/>
                                     <span className="count">0</span>
                                 </button>
                             </div>

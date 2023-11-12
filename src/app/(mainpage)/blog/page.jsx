@@ -65,7 +65,7 @@ const Blog = () => {
                         <div className="popular-posts">
                             <div className="popular-post">
                                 <div className="popular-post-image">
-                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" loading="lazy"/>
+                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image"/>
                                 </div>
                                 <div className="popular-post-content">
                                     <a href="#" className="popular-post-title">How to Ace Your Life</a>
@@ -76,7 +76,7 @@ const Blog = () => {
                             </div>
                             <div className="popular-post">
                                 <div className="popular-post-image">
-                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" loading="lazy"/>
+                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" />
                                 </div>
                                 <div className="popular-post-content">
                                     <a href="#" className="popular-post-title">How to Ace Your Life</a>
@@ -87,7 +87,7 @@ const Blog = () => {
                             </div>
                             <div className="popular-post">
                                 <div className="popular-post-image">
-                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" loading="lazy"/>
+                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" />
                                 </div>
                                 <div className="popular-post-content">
                                     <a href="#" className="popular-post-title">How to Ace Your Life</a>
@@ -98,7 +98,7 @@ const Blog = () => {
                             </div>
                             <div className="popular-post">
                                 <div className="popular-post-image">
-                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" loading="lazy"/>
+                                    <img src="/post-1.jpg" alt="How to Ace Your Life Image" />
                                 </div>
                                 <div className="popular-post-content">
                                     <a href="#" className="popular-post-title">How to Ace Your Life</a>
