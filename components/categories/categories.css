@@ -58,3 +58,28 @@
     font-weight: 500;
     text-transform: capitalize;
 }
+
+/* Responsive */
+@media screen and (max-width: 1536px) {}
+
+@media screen and (max-width: 1280px) {
+    .category-item {
+        min-width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .category-item {
+        min-width: calc(50% - 15px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    .category-item {
+        min-width: calc(100% - 15px);
+    }
+}

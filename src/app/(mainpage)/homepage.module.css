@@ -21,7 +21,35 @@
 }
 
 .blog {
-    display: flex;
-    gap: 30px;
+    overflow: hidden;
     margin-bottom: 50px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1536px) {}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .productGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .productGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .productGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
 }

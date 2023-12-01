@@ -1,5 +1,6 @@
 .testimonials-box {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -125,7 +126,7 @@
 .service-container {
     padding: 30px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 15px;
     border: 1px solid var(--cultured);
     border-radius: var(--border-radius-md);
@@ -157,4 +158,47 @@
 .service-desc {
     color: var(--sonic-silver);
     font-size: 16px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1536px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+    .service-container {
+        padding: 28px;
+        gap: 5px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+        min-width: 19.1%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .service-container {
+        gap: 30px;
+        padding: 30px 15px;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .service-title {
+        font-size: 16px;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    
 }

@@ -101,3 +101,29 @@
         max-width: 1366px;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .footer-container {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        max-width: 768px;
+    }
+    .footer-nav-list {
+        min-width: calc(33.33% - 15px);
+        width: calc(33.33% - 15px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-nav-list {
+        min-width: calc(100% - 15px);
+        width: calc(100% - 15px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+}

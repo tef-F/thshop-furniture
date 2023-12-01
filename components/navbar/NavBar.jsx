@@ -1,13 +1,22 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import './navbar.css'
 import { CiSearch } from 'react-icons/ci'
 import { AiTwotoneHome } from 'react-icons/ai'
 import { FaRegHeart, FaRegUser } from 'react-icons/fa6'
+import { IoCreateOutline, IoDocumentTextOutline, IoGridOutline, IoLogInOutline } from 'react-icons/io5'
+import { HiOutlineHome, HiOutlineMenu } from "react-icons/hi";
+import { FiHome } from "react-icons/fi";
 import { GrCart } from "react-icons/gr";
 import Link from 'next/link'
-import { IoCreateOutline, IoDocumentTextOutline, IoLogInOutline } from 'react-icons/io5'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 const NavBar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <>
             <header className="navbar">
@@ -15,7 +24,9 @@ const NavBar = () => {
                     <div className="navbar-container">
                         <div className="navbar-intro">
                             <div className="logo">
-                                <AiTwotoneHome />THShop
+                                <Link href="/" className="logo-th">
+                                    <AiTwotoneHome />THShop
+                                </Link>
                             </div>
                             <div className="navbar_search">
                                 <input type="search" placeholder="Enter your product name..." className="search-field"/>
@@ -41,14 +52,14 @@ const NavBar = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <button className="action-btn">
+                                <Link href="/" className="action-btn">
                                     <FaRegHeart className='icon' />
                                     <span className="count">0</span>
-                                </button>
-                                <button className="action-btn">
+                                </Link>
+                                <Link href="/cart" className="action-btn">
                                     <GrCart className='icon'/>
                                     <span className="count">0</span>
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -74,10 +85,38 @@ const NavBar = () => {
                 </nav>
             </header>
             <div className="navbar-mobile">
-                
+                <Link href="/" className="action-btn" onClick={toggleMenu}>
+                    <HiOutlineMenu />
+                </Link>
+                <Link href="/" className="action-btn">
+                    <FaRegHeart className='icon' />
+                    <span className="count">0</span>
+                </Link>
+                <Link href="/" className="action-btn">
+                    <FiHome />
+                </Link>
+                <Link href="/cart" className="action-btn">
+                    <GrCart className='icon'/>
+                    <span className="count">0</span>
+                </Link>
+                <Link href="/" className="action-btn">
+                    <FaRegUser className='icon' />
+                </Link>
             </div>
-        </>
-        
+            <CSSTransition in={isMenuOpen} classNames="menu-overlay" timeout={300} >
+                <div className={`overlay ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
+            </CSSTransition>
+            <CSSTransition in={isMenuOpen} classNames="menu" timeout={300} >
+                <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+                    <h3>Menu</h3>
+                    <Link href="/" className="mobile-menu-title">HOME</Link>
+                    <Link href="/product" className="mobile-menu-title">PRODUCTS</Link>
+                    <Link href="/blog" className="mobile-menu-title">BLOG</Link>
+                    <Link href="/about" className="mobile-menu-title">ABOUT</Link>
+                    <Link href="/contact" className="mobile-menu-title">CONTACT</Link>
+                </div>
+            </CSSTransition>
+        </> 
     )
 }
 

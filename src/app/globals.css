@@ -10,7 +10,7 @@
     --border-radius-md: 10px;
     --border-radius-sm: 5px;
 
-    --transition-timing: 0.2s ease;
+    --transition-timing: 0.3s ease;
 }
 
 * {
@@ -44,21 +44,6 @@ button,
 a {
     display: block;
 }
-
-.container {
-    min-height: 100vh;
-    background-color: white;
-    color: black;
-}
-
-.wrapper {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
 
 /* CSS Scroll */
 .has-scrollbar {

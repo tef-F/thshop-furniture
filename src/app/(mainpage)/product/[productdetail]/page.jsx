@@ -95,7 +95,7 @@ const ProductDetail = () => {
             </div>
 
             <div className="section-des-product">
-                <h1>Mô tả sản phẩm</h1>
+                <h2>Mô tả sản phẩm</h2>
                 <p>Lorem ipsum dolor,
                     sit amet consectetur adipisicing elit.
                     Aliquid, unde labore recusandae nisi laborum quas,
@@ -135,7 +135,54 @@ const ProductDetail = () => {
             </div>
 
             <div className="section-comment">
-                
+                <h2>Đánh giá sản phẩm</h2>
+                <form action="#">
+                    <div className="comment-rating">
+                        <AiOutlineStar className="star"/>
+                        <AiOutlineStar className="star"/>
+                        <AiOutlineStar className="star"/>
+                        <AiOutlineStar className="star"/>
+                        <AiOutlineStar className="star"/>
+                    </div>
+                    <textarea placeholder="Your opinion..."></textarea>
+                    <div className="comment-btn-group">
+                        <button type="submit" className="btn-submit-comment">Submit</button>
+                        <button className="btn-cancel-comment">Cancel</button>
+                    </div>
+                </form>
+
+                <div className="comment-user">
+                    <div className="comment_box">
+                        <img className="media_man" src="/avatar-user.jpg" alt="" />
+                        <div className="media-body">
+                            <div className="custom_flex">
+                                <h5 className="custom_para">Diego Fou | <span>jan 06 2020</span></h5>
+                                <a className="reply_text" href="#"><i className="fas fa-reply"></i></a>
+                            </div>
+                            <p className="blog_details_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utx gh labore et dolor magna ali Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                            <div className="comment_box">
+                                <img className="media_man" src="/avatar-user.jpg" alt="" />
+                                <div className="media_body">
+                                    <div className="custom_flex">
+                                        <h5 className="custom_para">Diego Fou | <span>jan 06 2020</span></h5>
+                                        <a className="reply_text" href="#"><i className="fas fa-reply"></i></a>
+                                    </div>
+                                    <p className="blog_details_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utx gh labore et dolor magna ali Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment_box">
+                        <img class="media_man" src="/avatar-user.jpg" alt=""/>
+                        <div class="media-body">
+                            <div class="custom_flex">
+                                <h5 class="custom_para">Diego Fou | <span>jan 06 2020</span></h5>
+                                <a class="reply_text" href="#"><i class="fas fa-reply"></i></a>
+                            </div>
+                            <p class="blog_details_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utx gh labore et dolor magna ali Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

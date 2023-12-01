@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
                     <div className="wrapper">
                         {children}
                     </div>
-                    <ChatBot />
+                    <div className="chatbot"><ChatBot /></div>
                     <Footer />
                 </div>
             </div>

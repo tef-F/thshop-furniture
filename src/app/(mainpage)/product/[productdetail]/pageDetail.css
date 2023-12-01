@@ -180,12 +180,12 @@
     opacity: 0.9;
 }
 
-
+/* section desc */
 .section-des-product {
-    margin: 10px 0 50px 0;
+    margin: 10px 0 30px 0;
 }
 
-.section-des-product h1 {
+.section-des-product h2 {
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -193,4 +193,115 @@
 .section-des-product p {
     font-size: 1.1rem;
     line-height: 1.4;
+}
+
+/* section comment */
+.section-comment {
+    margin-bottom: 50px;
+}
+
+.section-comment h2 {
+    font-weight: 600;
+}
+
+.section-comment .comment-rating {
+    display: flex;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: #FFBD13;
+	margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.comment-rating .star {
+    cursor: pointer;
+}
+
+.comment-rating .star:hover {
+	transform: scale(1.1);
+}
+
+.section-comment textarea {
+	width: 100%;
+    height: 100px;
+	padding: 1rem;
+    background: #F5F5F5;
+	border-radius: .5rem;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+    font-size: 18px;
+}
+
+.comment-btn-group {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.comment-btn-group .btn-submit-comment {
+    background: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: var(--border-radius-sm);
+}
+
+.comment-btn-group .btn-cancel-comment {
+    padding: 10px 15px;
+    border-radius: var(--border-radius-sm);
+}
+
+.comment-btn-group .btn-submit-comment:hover {
+    background: black;
+}
+
+.comment-btn-group .btn-cancel-comment:hover {
+    background: #e8e7e7;
+}
+
+.comment-user {
+    margin-top: 20px;
+    border-radius: var(--border-radius-sm);
+    padding: 15px 15px;
+    box-shadow: 0px 0px 25px #cac9c9;
+}
+
+.comment_box {
+	display: flex;
+	align-items: flex-start;
+}
+
+.media_man {
+	width: 70px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.comment_box {
+	margin-top: 20px;
+}
+
+.custom_flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.custom_para {
+	font-size: 18px;
+}
+
+.custom_para span {
+	font-size: 13px;
+}
+
+.reply_text {
+	text-decoration: none;
+	transition: .2s;
+}
+
+.blog_details_para {
+	font-size: 18px;
+	margin-top: 10px;
 }

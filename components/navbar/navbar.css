@@ -29,6 +29,10 @@
     font-weight: 800;
 }
 
+.logo .logo-th {
+    color: black;
+}
+
 .navbar_search {
     position: relative;
     flex: 2;
@@ -161,6 +165,99 @@
     width: 100%;
 }
 
+/* Mobile navbar */
+.navbar-mobile {
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: var(--border-radius-md);
+    border-top-left-radius: var(--border-radius-md);
+    padding-top: 5px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
+    z-index: 5;
+    display: none;
+}
+
+.navbar-mobile .action-btn {
+    position: relative;
+    font-size: 26px;
+    color: black;
+    padding: 10px;
+}
+
+.navbar-mobile .count {
+    background: var(--bittersweet);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 32%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1001;
+    padding: 20px;
+    transition: left 0.3s ease;
+}
+
+.mobile-menu.active {
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+.mobile-menu h3 {
+    color: var(--primary);
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--cultured);
+}
+
+.mobile-menu-title {
+    color: var(--onyx);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 0;
+}
+
+/* Responsive */
 @media screen and (max-width: 1536px) {
     .navbar-container {
         max-width: 1366px;
@@ -173,3 +270,41 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .navbar-container {
+        max-width: 768px;
+    }
+
+    .navbar-icons {
+        display: none;
+    }
+
+    .navbar-bottom {
+        display: none;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        max-width: 640px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navbar-intro {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar_search {
+        width: 100%;
+    }
+}
