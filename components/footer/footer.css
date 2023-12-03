@@ -116,6 +116,9 @@
         min-width: calc(33.33% - 15px);
         width: calc(33.33% - 15px);
     }
+    .footer-bottom {
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {

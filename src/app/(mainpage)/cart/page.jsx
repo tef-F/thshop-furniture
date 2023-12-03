@@ -69,7 +69,7 @@ const CartPage = () => {
                             <td>$230.00</td>
                         </tr>
                         <tr>
-                            <th colspan="2">Thanh toán</th>
+                            <th colSpan="2">Thanh toán</th>
                         </tr>
                     </tbody>
                 </table>

@@ -229,7 +229,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 32%;
+    width: 35%;
     height: 100%;
     background-color: #fff;
     z-index: 1001;
@@ -306,5 +306,14 @@
 
     .navbar_search {
         width: 100%;
+    }
+
+    .mobile-menu {
+        width: 60%;
+    }
+
+    .navbar-mobile {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 }

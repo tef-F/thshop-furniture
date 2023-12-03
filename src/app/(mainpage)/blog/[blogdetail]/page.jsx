@@ -1,6 +1,12 @@
+'use client'
 import Link from "next/link";
 import "./pageDetail.css"
 import BlogItem from "../../../../../components/blogitem/BlogItem";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const BlogDetail = () => {
     return (
@@ -68,10 +74,29 @@ const BlogDetail = () => {
             <div className="blog-popular">
                 <h2>Popular Post</h2>
                 <div className="blog-popular-container">
-                    <BlogItem />
-                    <BlogItem />
-                    <BlogItem />
-                    <BlogItem />
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    breakpoints={{
+                        1280: {
+                        slidesPerView: 4,
+                        },
+                        1024: {
+                        slidesPerView: 3,
+                        },
+                        768: {
+                        slidesPerView: 2,
+                        },
+                    }}
+                    modules={[Pagination]}
+                    >
+                        <SwiperSlide><BlogItem /></SwiperSlide>
+                        <SwiperSlide><BlogItem /></SwiperSlide>
+                        <SwiperSlide><BlogItem /></SwiperSlide>
+                        <SwiperSlide><BlogItem /></SwiperSlide>
+                        <SwiperSlide><BlogItem /></SwiperSlide>
+                        <SwiperSlide><BlogItem /></SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </div>
