@@ -66,6 +66,14 @@
     transition: var(--transition-timing);
 }
 
+.product-grid .btn-action a {
+    color: var(--sonic-silver);
+}
+
+.product-grid .btn-action a:hover {
+    color: white;
+}
+
 .product_btn-icon {
     margin-bottom: -5px;
 }

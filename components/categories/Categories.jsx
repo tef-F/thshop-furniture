@@ -28,7 +28,7 @@ const Categories = () => {
                     </div>
                     <div className="category-content-box">
                         <div className="category-content-flex">
-                            <h3 className="category-item-title">Ghế Sofa</h3>
+                            <h3 className="category-item-title">Ghế Gỗ</h3>
 
                             <p className="category-item-amount">(50)</p>
                         </div>
@@ -43,7 +43,7 @@ const Categories = () => {
                     </div>
                     <div className="category-content-box">
                         <div className="category-content-flex">
-                            <h3 className="category-item-title">Ghế Sofa</h3>
+                            <h3 className="category-item-title">Ghế Gamming</h3>
 
                             <p className="category-item-amount">(50)</p>
                         </div>
@@ -58,7 +58,7 @@ const Categories = () => {
                     </div>
                     <div className="category-content-box">
                         <div className="category-content-flex">
-                            <h3 className="category-item-title">Ghế Sofa</h3>
+                            <h3 className="category-item-title">Ghế Bếp</h3>
 
                             <p className="category-item-amount">(50)</p>
                         </div>
@@ -73,7 +73,7 @@ const Categories = () => {
                     </div>
                     <div className="category-content-box">
                         <div className="category-content-flex">
-                            <h3 className="category-item-title">Ghế Sofa</h3>
+                            <h3 className="category-item-title">Bàn Coffe</h3>
 
                             <p className="category-item-amount">(50)</p>
                         </div>
@@ -88,7 +88,7 @@ const Categories = () => {
                     </div>
                     <div className="category-content-box">
                         <div className="category-content-flex">
-                            <h3 className="category-item-title">Ghế Sofa</h3>
+                            <h3 className="category-item-title">Ghế Xoay</h3>
 
                             <p className="category-item-amount">(50)</p>
                         </div>

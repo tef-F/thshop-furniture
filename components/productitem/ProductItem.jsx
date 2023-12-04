@@ -23,7 +23,7 @@ const ProductItem = () => {
                             <AiOutlineShoppingCart className="product_btn-icon"/>
                         </button>
                         <button className="btn-action">
-                            <AiOutlineCamera className="product_btn-icon"/>
+                            <Link href="https://playcanv.as/p/tXiVwuwF/"><AiOutlineCamera className="product_btn-icon" /></Link>
                         </button>
                     </div>
                 </div>

@@ -1,84 +1,60 @@
 .page-product {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     margin: 50px 0;
 }
-.close-trigger, 
-.page-product .widget input[type="checkbox"] {
-    display: none;
+
+.sidebar {
+    width: 40%;
 }
 
-.filter-sidebar {
-    width: 30%;
-}
-
-.filter-title {
-    font-size: 24px;
+.sidebar h1 {
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.page-product .widget {
-    margin: 20px 0;
-}
-
-.page-product label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.page-product label span {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.page-product label i {
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3s ease;
-}
-
-.page-product .list-block ul {
-    padding-left: 15px;
-}
-
-.page-product .list-block li {
-    font-size: 18px;
-    padding: 10px 5px;
-}
-
-.sidebar-category-item {
-    color: var(--onxy);
-}
-
-.page-product .widget .accord {
-    padding-right: 15px;
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transition: all .3s ease;
-}
-
-.page-product .widget input:checked ~ div {
-    max-height: 1000px;
-    opacity: 1;
-    visibility: visible;
-}
-
-.page-product .widget input:checked ~ label i {
-    transform: rotate(180deg);
+.pro-filter {
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 19%);;
+    border-radius: var(--border-radius-md);
+    padding: 20px 20px;
 }
 
 .griddot {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1536px) {}
+
+@media screen and (max-width: 1280px) {
+    .griddot {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .griddot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .griddot {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .griddot {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .sidebar {
+        display: none;
+    }
 }
 
 
