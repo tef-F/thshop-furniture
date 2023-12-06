@@ -22,14 +22,16 @@ const Blog = () => {
                             <div className="post-content">
                                 <a className="post-title">How to Ace Your Life</a>
                                 <p className="post-info">Posted on January 31, 2020 by superbthemes</p>
-                                <p className="post-summary">
-                                    Etiam placerat velit vitae duiblandit sollicitudin.
-                                    Vestibulum tincidunt sed dolor sit amet volutpat.
-                                    Nullam egestas sem at mollis sodales.
-                                    Nunc eget lacinia eros, ut tincidunt nunc.
-                                    Quisque volutpat, enim id volutpat interdum,
-                                    purus odio euismod neque, sit amet faucibus…
-                                </p>
+                                <div className="post-summary-container">
+                                    <p className="post-summary">
+                                        Etiam placerat velit vitae duiblandit sollicitudin.
+                                        Vestibulum tincidunt sed dolor sit amet volutpat.
+                                        Nullam egestas sem at mollis sodales.
+                                        Nunc eget lacinia eros, ut tincidunt nunc.
+                                        Quisque volutpat, enim id volutpat interdum,
+                                        purus odio euismod neque, sit amet faucibus
+                                    </p>
+                                </div>
                             </div>
                             <div className="post-read-more">
                                 <span>+</span>
@@ -43,14 +45,39 @@ const Blog = () => {
                             <div className="post-content">
                                 <a className="post-title">How to Ace Your Life</a>
                                 <p className="post-info">Posted on January 31, 2020 by superbthemes</p>
-                                <p className="post-summary">
-                                    Etiam placerat velit vitae duiblandit sollicitudin.
-                                    Vestibulum tincidunt sed dolor sit amet volutpat.
-                                    Nullam egestas sem at mollis sodales.
-                                    Nunc eget lacinia eros, ut tincidunt nunc.
-                                    Quisque volutpat, enim id volutpat interdum,
-                                    purus odio euismod neque, sit amet faucibus…
-                                </p>
+                                <div className="post-summary-container">
+                                    <p className="post-summary">
+                                        Etiam placerat velit vitae duiblandit sollicitudin.
+                                        Vestibulum tincidunt sed dolor sit amet volutpat.
+                                        Nullam egestas sem at mollis sodales.
+                                        Nunc eget lacinia eros, ut tincidunt nunc.
+                                        Quisque volutpat, enim id volutpat interdum,
+                                        purus odio euismod neque, sit amet faucibus
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="post-read-more">
+                                <span>+</span>
+                            </div>
+                        </div>
+                        
+                        <div className="post">
+                            <div className="post-image">
+                                <img src="/post-1.jpg" alt="How to Ace Your Life Image" />
+                            </div>
+                            <div className="post-content">
+                                <a className="post-title">How to Ace Your Life</a>
+                                <p className="post-info">Posted on January 31, 2020 by superbthemes</p>
+                                <div className="post-summary-container">
+                                    <p className="post-summary">
+                                        Etiam placerat velit vitae duiblandit sollicitudin.
+                                        Vestibulum tincidunt sed dolor sit amet volutpat.
+                                        Nullam egestas sem at mollis sodales.
+                                        Nunc eget lacinia eros, ut tincidunt nunc.
+                                        Quisque volutpat, enim id volutpat interdum,
+                                        purus odio euismod neque, sit amet faucibus
+                                    </p>
+                                </div>
                             </div>
                             <div className="post-read-more">
                                 <span>+</span>

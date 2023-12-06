@@ -43,7 +43,8 @@
 .about-card i {
     margin: 20px;
     color: var(--primary);
-    font-size: 40px;
+    font-size: 45px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .about-card h2 {
@@ -62,7 +63,36 @@
     background-color: var(--primary);
 }
 
+.about-card:hover i {
+    transform: translateY(-15px);
+}
+
 .about-card:hover i,
 .about-card:hover p {
     color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1536px) {}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .about_content-box {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_content-box {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about_content-box {
+        width: 320px;
+    }
 }

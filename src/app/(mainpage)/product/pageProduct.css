@@ -4,6 +4,12 @@
     margin: 50px 0;
 }
 
+.filter h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--onxy);
+}
+
 .sidebar {
     width: 40%;
 }

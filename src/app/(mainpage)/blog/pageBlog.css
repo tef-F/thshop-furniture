@@ -46,7 +46,7 @@
     box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 10%);
     margin-bottom: 5rem;
     position: relative;
-    max-height: 20rem;
+    max-height: 18rem;
 }
 
 .blog-content .blog-box {
@@ -78,7 +78,6 @@
     padding: 35px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -118,10 +117,18 @@
     transition: 0.3s;
 }
 
-.blog-posts .post .post-summary {
+.blog-posts .post .post-summary-container {
+    overflow: hidden;
+}
+
+.blog-posts .post .post-summary-container .post-summary {
     line-height: 150%;
     color: #949494;
     font-size: 16px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 /* Category blog CSS */
@@ -186,4 +193,89 @@
 
 .popular-post .popular-post-content p {
     color:var(--onxy);
+}
+
+/* Responsive */
+@media screen and (max-width: 1536px) {}
+
+@media screen and (max-width: 1280px) {
+    .blog-content { 
+        gap: 40px;
+    }
+    .blog-posts .post .post-content { 
+        padding: 20px;    
+    }
+    .blog-posts .post .post-content .post-info {
+        padding: 0.5rem 0rem;
+    }
+    .blog-box .blog-posts .post {
+        margin-bottom: 3rem;
+    }
+    .popular-posts-side .popular-posts .popular-post {
+        padding: 0.6rem;
+        margin-bottom: 0rem;
+    }
+    .popular-posts-side {
+        margin: 0rem 00rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blog-content {
+        flex-direction: column;
+    }
+    .blog-content .blog-box {
+        width: 100%;
+    }
+    .blog-content .blog-categories {
+        width: 100%;
+    }
+    .popular-posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    .blog-box .blog-posts .post {
+        max-height: 11rem;
+    }
+    .popular-posts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+    .post-summary-container {
+        display: none;
+    }
+    .blog-posts .post .post-image {
+        width: 100%;
+    }
+    .blog-posts .post .post-content .post-title {
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .blog-posts .post .post-content .post-info {
+        font-size: 18px;
+    }
+    .blog-title {
+        width: 300px;
+    }
+    .blog-title h2 {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+    .blog-title p {
+        font-size: 18px;
+        margin: 0 15px 20px 15px;
+    }
+    .blog-posts .post .post-read-more {  
+        font-size: 35px;
+        padding: 0 11px 4px 11px;
+    }
 }
